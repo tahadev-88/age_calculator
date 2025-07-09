@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container mx-auto p-6 bg-white shadow-lg rounded-md max-w-md">
+  <div class="head text-center mb-6">
+    <h1 class="text-3xl font-bold text-gray-800">Age Calculator</h1>
+  </div>
+
+  <div class="filled mb-4">
+    <p class="tittle mb-1 text-gray-600">DATE</p>
+    <input type="number" name="date" id="day" required minlength="1" maxlength="2" placeholder="dd"
+      class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+  </div>
+
+  <div class="filled mb-4">
+    <p class="tittle mb-1 text-gray-600">MONTH</p>
+    <input type="number" name="month" id="month" required minlength="1" maxlength="2" placeholder="mm"
+      class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+  </div>
+
+  <div class="filled mb-6">
+    <p class="tittle mb-1 text-gray-600">YEAR</p>
+    <input type="number" name="year" id="year" required minlength="4" maxlength="4" placeholder="yyyy"
+      class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+  </div>
+
+  <div class="submit text-center mb-4">
+    <input type="button" name="submit" value="Submit"
+      onclick="age()"
+      class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 cursor-pointer transition duration-200" />
+  </div>
+
+  
+  <div id="age" class="text-center text-lg font-medium text-gray-800"></div>
+</div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
